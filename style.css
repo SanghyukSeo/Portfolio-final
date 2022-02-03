@@ -1,0 +1,312 @@
+html{
+    font-size: 62.5%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Sk-Modernist";
+	color: var(--secondary-color);
+    font-family: 'Blinker', sans-serif;
+
+/* cursor custom*/
+	transition: all .2s linear;
+}
+
+body{
+    height: 3000px;
+}
+li, a, button {
+    font-weight: 500;
+    font-size:16px;
+    color: solid black;
+    text-decoration: none;
+}
+
+/* Font wrap Setting*/
+h1{
+    word-break: break-all;
+    white-space: normal;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    cursor:pointer;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 2rem;
+}
+
+.nav_links li a{
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+}
+.nav_links li a:hover{
+    text-decoration: line-through;
+}
+
+.space100{
+    width: 100%;
+    height: 100px;
+}
+.divider{
+    width: 100%;
+	height: 1px;
+	background: rgb(20, 20, 20);
+}
+.introduction{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.hello p{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 4.8rem;
+    font-weight: 200;
+}
+.iam p{
+    text-align: right;
+    margin-top: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+    font-weight: 200;
+}
+.name h1{
+    text-align:right;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 18rem;
+    font-weight: 500;
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+.arrow-container{
+    margin-top: 20px;
+}
+.arrow2{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+.arrow-container .arrow{
+    float: right;
+    margin-right: 15%;
+    display: flex;
+    width: 100px;
+    height: auto;
+    transition: ease-in-out;
+    transition-duration: .3s;
+}
+.arrow-container :hover {
+    transform: rotate(90deg);
+}
+
+
+@media (max-width: 1200px) {
+    
+    .hello p{
+        
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 3rem;
+}
+    .name h1{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 5rem;
+    }
+    .iam p{
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 3rem;
+    }
+    .arrow{
+        margin-right: 10%;
+        width: 70px;
+    }
+}
+
+
+h2{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    z-index: 0;
+}
+
+.main-grid { 
+    margin-left: 15%;
+    margin-right: 15%;
+    height:100%;
+      display: grid;
+      gap: 1.5rem;
+      grid-auto-columns: 1fr;
+      grid-auto-rows:1fr;
+      grid-template-areas: 
+      'one'
+      'two'
+      'three'
+      'four'
+      'five'
+      'six'
+      'seven'
+      'eight'
+      'nine'
+      'ten'
+      'eleven'
+      'twelve'
+      'thirteen'
+      'fourteen'
+      'fifteen'
+      'sixteen';
+  
+      /*padding-block: 2rem;
+      */
+  
+}
+
+.grid {
+    background-color: rgb(255, 255, 255);
+  }
+  .grid:nth-child(1){
+      grid-area: one;
+  }
+  .grid:nth-child(2){
+      grid-area: two;
+      border-style: solid;
+      border-width:0.5px;
+      color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(3){
+     grid-area: three;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(4){
+     grid-area: four;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(5){
+     grid-area: five;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(6){
+     grid-area: six;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(7){
+     grid-area: seven;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(8){
+     grid-area: eight;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(9){
+     grid-area: nine;
+  }
+  .grid:nth-child(10){
+     grid-area: ten;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(11){
+     grid-area: eleven;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(12){
+     grid-area: twelve;
+  }
+  .grid:nth-child(13){
+     grid-area: thirteen;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(14){
+     grid-area: fourteen;
+     border-style: solid;
+     border-width:0.5px;
+     color: rgb(177, 177, 177);
+  }
+  .grid:nth-child(15){
+     grid-area: fifteen;
+  }
+  .grid:nth-child(16){
+     grid-area: sixteen;
+  }
+
+  
+.star {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+.grid > img{
+    margin: 0;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+  
+@media (min-width: 1200px){
+    .main-grid{
+      grid-template-areas: 
+      'one one one one two two two two'
+      'one one one one two two two two'
+      'three three four four two two two two'
+      'three three four four two two two two'
+      'three three five five five five six six'
+      'three three five five five five six six'
+      'seven seven eight eight eight eight eight eight'
+      'seven seven nine nine ten ten ten ten'
+      'eleven eleven nine nine ten ten ten ten' 
+      'eleven eleven nine nine ten ten ten ten'
+      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
+    }
+}
