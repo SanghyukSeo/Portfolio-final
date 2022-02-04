@@ -11,9 +11,7 @@ html{
     font-family: 'Blinker', sans-serif;
     
     transition: all .2s ease-out;
-    
 
-/* cursor custom*/
 }
 
 body{
@@ -318,7 +316,6 @@ h2{
 .grid:nth-child(4) :hover{
     transform: scale(97%);
 }
-
 .grid:nth-child(6) :hover{
     transform: scale(97%) rotate(5deg);
 }
@@ -332,6 +329,9 @@ h2{
     object-position: center;
     text-align: center;
     overflow: hidden;
+} 
+.marquee :hover {
+    font-weight: 300;
 } 
 .marquee-wrapper{
     width: 1000%;
