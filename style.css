@@ -9,13 +9,15 @@ html{
 	font-family: "Sk-Modernist";
 	color: var(--secondary-color);
     font-family: 'Blinker', sans-serif;
+    
+    transition: all .2s ease-out;
+    
 
 /* cursor custom*/
-	transition: all .2s linear;
 }
 
 body{
-    height: 3000px;
+    height: 4000px;
 }
 li, a, button {
     font-weight: 500;
@@ -97,28 +99,39 @@ header{
     font-weight: 500;
     font-family: 'BioRhyme Expanded', serif;
 }
-
 .arrow-container{
     margin-top: 20px;
 }
-.arrow2{
+.arrow-container2{
     display: flex;
-    width: 70px;
-    height: 70px;
-    transition: ease-in-out;
-    transition-duration: .3s;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
 }
-.arrow-container .arrow{
+.arrow2{  
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+}
+.arrow{
     float: right;
     margin-right: 15%;
     display: flex;
     width: 100px;
     height: auto;
-    transition: ease-in-out;
-    transition-duration: .3s;
 }
-.arrow-container :hover {
-    transform: rotate(90deg);
+.arrow:hover{
+    animation:  arrow infinite  800ms 40ms ease-in-out;
+}
+@keyframes arrow{
+    0% {
+        transform: translateX(-20px);
+    }
+    100%{
+        
+        transform: translateX(0px);
+    }
 }
 
 
@@ -160,9 +173,9 @@ h2{
     margin-right: 15%;
     height:100%;
       display: grid;
-      gap: 1.5rem;
-      grid-auto-columns: 1fr;
-      grid-auto-rows:1fr;
+      gap: 0rem;
+        grid-auto-columns: 1fr;
+        grid-auto-rows:1fr;
       grid-template-areas: 
       'one'
       'two'
@@ -195,44 +208,57 @@ h2{
   .grid:nth-child(2){
       grid-area: two;
       border-style: solid;
-      border-width:0.5px;
-      color: rgb(177, 177, 177);
+      border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(3){
      grid-area: three;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(4){
      grid-area: four;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-left: none;
+     border-right: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(5){
      grid-area: five;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-left: none;
+     border-top: none;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(6){
      grid-area: six;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-left: none;
+     border-top: none;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+     background-color: rgb(224, 224, 224);
   }
   .grid:nth-child(7){
      grid-area: seven;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(8){
      grid-area: eight;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-left: none;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(9){
      grid-area: nine;
@@ -240,14 +266,16 @@ h2{
   .grid:nth-child(10){
      grid-area: ten;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(11){
      grid-area: eleven;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(12){
      grid-area: twelve;
@@ -255,14 +283,15 @@ h2{
   .grid:nth-child(13){
      grid-area: thirteen;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(14){
      grid-area: fourteen;
      border-style: solid;
-     border-width:0.5px;
-     color: rgb(177, 177, 177);
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
   }
   .grid:nth-child(15){
      grid-area: fifteen;
@@ -271,7 +300,6 @@ h2{
      grid-area: sixteen;
   }
 
-  
 .star {
     display: flex;
     width: 100%;
@@ -287,9 +315,57 @@ h2{
     object-fit: cover;
 }
 
-  
+.grid:nth-child(4) :hover{
+    transform: scale(97%);
+}
+
+.grid:nth-child(6) :hover{
+    transform: scale(97%) rotate(5deg);
+}
+.grid:nth-child(10) :hover{
+    transform: scale(97%);
+}
+.marquee{
+    padding-top: 25px;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    text-align: center;
+    overflow: hidden;
+} 
+.marquee-wrapper{
+    width: 1000%;
+    animation : marqueeAnimation 15s linear 0s infinite running;
+}
+
+.marquee h3{
+    font-size: 6rem;
+    font-weight: 200;
+    color:rgb(80, 80, 80)
+}
+
+.marquee h3 .marquee-title{
+    margin-left: 20px;
+    float: left;
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+.marquee h3 .marquee-title span{
+    
+    font-family: 'BioRhyme Expanded', serif;
+}
+
+@keyframes marqueeAnimation{
+    100%{
+        transform: translateX(-25%);
+    }
+
+}
+
+
 @media (min-width: 1200px){
     .main-grid{
+        grid-auto-rows:13rem;
       grid-template-areas: 
       'one one one one two two two two'
       'one one one one two two two two'
@@ -309,4 +385,60 @@ h2{
       'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
       'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
     }
+    .marquee{
+        padding-top: 30px;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        text-align: center;
+        overflow: hidden;
+    } 
+    .marquee h3{
+        font-size: 4rem;
+        font-weight: 200;
+        color:rgb(80, 80, 80)
+    }
+    
+}
+@media (min-width: 1800px){
+    .main-grid{
+        grid-auto-rows:21rem;
+      grid-template-areas: 
+      'one one one one two two two two'
+      'one one one one two two two two'
+      'three three four four two two two two'
+      'three three four four two two two two'
+      'three three five five five five six six'
+      'three three five five five five six six'
+      'seven seven eight eight eight eight eight eight'
+      'seven seven nine nine ten ten ten ten'
+      'eleven eleven nine nine ten ten ten ten' 
+      'eleven eleven nine nine ten ten ten ten'
+      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
+    }
+    .arrow2{
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%,-50%);
+    }
+    .marquee{
+        padding-top: 55px;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        text-align: center;
+        overflow: hidden;
+    } 
+    .marquee h3{
+        font-size: 6rem;
+        font-weight: 200;
+        color:rgb(80, 80, 80)
+    }
+    
 }
