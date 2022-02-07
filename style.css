@@ -202,6 +202,7 @@ h2{
     color: rgb(199, 199, 199);
 }
 
+/*Step 1*/
 .main-grid { 
     background-color: white;
     margin-left: 15%;
@@ -393,48 +394,58 @@ h2{
 }
 .grid:nth-child(1):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(2):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
     filter: contrast(105%);
 }
 .grid:nth-child(3):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(4) :hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(6) :hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(7):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(8):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(9):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(10):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(11):hover{      /* arrow2 */
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 15px #00000020;
 }
 .grid:nth-child(12):hover{
     opacity: 0.6;
     background-color: rgba(0, 0, 0, 0.1);
+}
+.grid:nth-child(13):hover{
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow:inset 0 0 10px #00000020;
+}
+.grid:nth-child(14):hover{
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(15):hover{
     opacity: 0.6;
@@ -595,6 +606,8 @@ h2{
 
 
 
+/*Step 2*/
+
 @media (min-width: 50px){
 .main-grid{
     margin-left: 5%;
@@ -623,9 +636,118 @@ h2{
   'twelve twelve twelve twelve'
   'fifteen fifteen sixteen sixteen'
   'fifteen fifteen sixteen sixteen';
+
 }
+
+.grid {
+    background-color: transparent;
+  }
+  .grid:nth-child(1){
+      grid-area: one;
+      border-style: solid;
+      border-bottom: none;
+      border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(2){
+      grid-area: two;
+      border-left: none;
+      border-style: solid;
+      border-bottom: none;
+      border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(3){
+     grid-area: three;
+     border-style: solid;
+     border-bottom: none;
+     border-right: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(4){
+     grid-area: four;
+     border-style: solid;
+     border-right: none;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(5){
+     grid-area: five;
+     border-style: solid;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(6){
+     grid-area: six;
+     border-style: solid;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(7){
+     grid-area: seven;
+     border-style: solid;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(8){
+     grid-area: eight;
+     border-style: solid;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(9){
+     grid-area: nine;
+     border-style: solid;
+     border-bottom: none;
+     border-right: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(10){
+     grid-area: ten;
+     border-style: solid;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(11){
+     grid-area: eleven;
+     border-style: solid;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(12){
+     grid-area: twelve;
+  }
+  .grid:nth-child(13){
+     grid-area: thirteen;
+     border-style: solid;
+     border-bottom: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(14){
+     grid-area: fourteen;
+     border-style: solid;
+     border-right: none;
+     border-width:0.2px;
+     color: rgb(224, 224, 224);
+  }
+  .grid:nth-child(15){
+     grid-area: fifteen;
+  }
+  .grid:nth-child(16){
+     grid-area: sixteen;
+  }
 .marquee{
-    padding-top: 20px;
+    padding-top: 28px;
     width: 100%;
     height: 100%;
     object-position: center;
@@ -633,13 +755,21 @@ h2{
     overflow: hidden;
 } 
 .marquee h3{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     color:rgb(80, 80, 80)
 }
+.arrow-container2{
+    display: flex;
+    width:100%;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+}
 }
 
 
+/*Step 3*/
 
 @media (min-width: 800px){
     .main-grid{
@@ -803,7 +933,7 @@ h2{
       }
 }
 
-
+/*Step 4*/
 @media (min-width: 1300px){
     .main-grid{
         grid-auto-rows:13rem;
@@ -842,45 +972,45 @@ h2{
     
 .grid {
     background-color: transparent;
-  }
-  .grid:nth-child(1){
-      grid-area: one;
-      border-style: solid;
-      border-right: none;
-      border-bottom: none;
-      border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(2){
-      grid-area: two;
-      border-style: solid;
-      border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(3){
-     grid-area: three;
-     border-style: solid;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(4){
-     grid-area: four;
-     border-style: solid;
-     border-left: none;
-     border-right: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(5){
-     grid-area: five;
-     border-style: solid;
-     border-left: none;
-     border-top: none;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
+    }
+    .grid:nth-child(1){
+        grid-area: one;
+        border-style: solid;
+        border-right: none;
+        border-bottom: none;
+        border-width:0.2px;
+        color: rgb(224, 224, 224);
+    }
+    .grid:nth-child(2){
+        grid-area: two;
+        border-style: solid;
+        border-width:0.2px;
+        color: rgb(224, 224, 224);
+    }
+    .grid:nth-child(3){
+        grid-area: three;
+        border-style: solid;
+        border-bottom: none;
+        border-width:0.2px;
+        color: rgb(224, 224, 224);
+    }
+    .grid:nth-child(4){
+        grid-area: four;
+        border-style: solid;
+        border-left: none;
+        border-right: none;
+        border-width:0.2px;
+        color: rgb(224, 224, 224);
+    }
+    .grid:nth-child(5){
+        grid-area: five;
+        border-style: solid;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        border-width:0.2px;
+        color: rgb(224, 224, 224);
+    } 
   .grid:nth-child(6){
      grid-area: six;
      border-style: solid;
@@ -952,28 +1082,29 @@ h2{
   }
 }
 
+/*Step 5*/
 
 @media (min-width: 2100px){
     .main-grid{
         grid-auto-rows:21rem;
-      grid-template-areas: 
-      'one one one one two two two two'
-      'one one one one two two two two'
-      'three three four four two two two two'
-      'three three four four two two two two'
-      'three three five five five five six six'
-      'three three five five five five six six'
-      'seven seven eight eight eight eight eight eight'
-      'seven seven nine nine ten ten ten ten'
-      'eleven eleven nine nine ten ten ten ten' 
-      'eleven eleven nine nine ten ten ten ten'
-      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
-      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
-      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
-      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
+    grid-template-areas: 
+    'one one one one two two two two'
+    'one one one one two two two two'
+    'three three four four two two two two'
+    'three three four four two two two two'
+    'three three five five five five six six'
+    'three three five five five five six six'
+    'seven seven eight eight eight eight eight eight'
+    'seven seven nine nine ten ten ten ten'
+    'eleven eleven nine nine ten ten ten ten' 
+    'eleven eleven nine nine ten ten ten ten'
+    'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+    'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+    'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+    'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+    'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+    'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+    'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
     }
     .arrow2{
         width: 200px;
