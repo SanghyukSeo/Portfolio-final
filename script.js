@@ -70,8 +70,6 @@ $("document").ready(function(){
         //$('.arrow-container2').css("background-color", "#e6d081;");
         $('#text').html("&amp; Exploded view / Desk fan / 2021  &nbsp&nbsp&nbsp   ");
             });
-
-
     
     $(".arrow-container2").hover(
         

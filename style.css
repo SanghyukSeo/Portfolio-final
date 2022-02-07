@@ -8,7 +8,7 @@ html{
 	box-sizing: border-box;
 	font-family: "Sk-Modernist";
 	color: var(--primary-color);
-    font-family: 'Blinker', sans-serif;
+    font-family: 'Encode Sans Expanded', sans-serif;
     transition: all .2s ease-out;
 }
 
@@ -42,7 +42,7 @@ body{
 }
 li, a, button {
     font-weight: 500;
-    font-size:16px;
+    font-size:14px;
     color: solid black;
     text-decoration: none;
 }
@@ -72,6 +72,8 @@ header{
 }
 
 .nav_links li a{
+    font-size:calc(10px + .2vw);
+    font-weight: 400;
     text-transform: uppercase;
     transition: all .3s ease 0s;
 }
@@ -98,7 +100,7 @@ header{
     margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 2.5vw;
+    font-size:calc(12px + 1.5vw);
     font-weight: 200;
 }
 .iam p{
@@ -107,15 +109,16 @@ header{
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 20px;
-    font-size: 2.5vw;
+    font-size:calc(12px + 1.5vw);
     font-weight: 200;
 }
 .name h1{
+    word-break: keep-all;
     text-align:right;
     margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 7vw;
+    font-size:calc(12px + 6.5vw);
     font-weight: 500;
     font-family: 'BioRhyme Expanded', serif;
 }
@@ -457,24 +460,24 @@ h2{
 
 .marquee h3{
     font-size: 3rem;
-    font-weight: 200;
     color:rgb(80, 80, 80)
 }
 
 .marquee h3 .marquee-title{
     margin-left: 20px;
     float: left;
-    font-family: 'BioRhyme Expanded', serif;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 100;
 }
 
 .marquee h3 .marquee-title span{
-    
-    font-family: 'BioRhyme Expanded', serif;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 100;
 }
 
 @keyframes marqueeAnimation{
     100%{
-        transform: translateX(-25%);
+        transform: translateX(-15%);
     }
 
 }
@@ -514,7 +517,7 @@ h2{
 	cursor: pointer;
 	text-decoration: none;
     font-family: 'BioRhyme Expanded', serif !important;
-    font-size: 5vw;
+    font-size:calc(12px + 4.5vw);
 }
 
 .intro-container .a:hover{
@@ -522,13 +525,13 @@ h2{
     z-index: -1;
 }
 .intro-container .text1 {
-    color:rgba(0, 0, 0, 0.144);
+    color:rgba(0, 0, 0, 0.1);
 }
 .intro-container .text2 {
-    color:rgba(0, 0, 0, 0.144);
+    color:rgba(0, 0, 0, 0.1);
 }
 .intro-container .text3 {
-    color:rgba(0, 0, 0, 0.144);
+    color:rgba(0, 0, 0, 0.1);
 }
 .intro-container .text1:hover {
     color: rgb(0, 0, 0);
@@ -592,52 +595,56 @@ h2{
 
 
 
-
-
-
-
-
-
-
 @media (min-width: 100px){
-
-
-.main-grid { 
-    background-color: rgb(255, 255, 255);
-      display: grid;
-      gap: 0rem;
-        grid-auto-columns: 1fr;
-        grid-auto-rows:1fr;
-      grid-template-areas: 
-      'one'
-      'two'
-      'three'
-      'four'
-      'five'
-      'six'
-      'seven'
-      'eight'
-      'nine'
-      'ten'
-      'eleven'
-      'twelve'
-      'thirteen'
-      'fourteen'
-      'fifteen'
-      'sixteen';
-  
-      /*padding-block: 2rem;
-      */
-    }
+.main-grid{
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-auto-rows:12rem;
+  grid-template-areas: 
+  'one one one one'
+  'one one one one'
+  'four four two two'
+  'four four two two'
+  'three three two two'
+  'three three six six'
+  'three three six six'
+  'eight eight eight eight'
+  'five five five five'
+  'five five five five'
+  'ten ten ten ten'
+  'ten ten ten ten'
+  'nine nine seven seven'
+  'nine nine seven seven'
+  'nine nine eleven eleven'
+  'fourteen fourteen eleven eleven'
+  'fourteen fourteen thirteen thirteen'
+  'fourteen fourteen thirteen thirteen'
+  'twelve twelve twelve twelve'
+  'twelve twelve twelve twelve'
+  'fifteen fifteen sixteen sixteen'
+  'fifteen fifteen sixteen sixteen';
+}
+.marquee{
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    text-align: center;
+    overflow: hidden;
+} 
+.marquee h3{
+    font-size: 4rem;
+    font-weight: 100;
+    color:rgb(80, 80, 80)
+}
 }
 
 
 
-
-
-
-@media (min-width: 900px){
+@media (min-width: 800px){
     .main-grid{
+        margin-left: 15%;
+        margin-right: 15%;
         grid-auto-rows:12rem;
       grid-template-areas: 
      
@@ -665,7 +672,7 @@ h2{
         transform: translate(-50%,-50%);
     }
     .marquee{
-        padding-top: 25px;
+        padding-top: 30px;
         width: 100%;
         height: 100%;
         object-position: center;
@@ -674,7 +681,7 @@ h2{
     } 
     .marquee h3{
         font-size: 4rem;
-        font-weight: 200;
+        font-weight: 100;
         color:rgb(80, 80, 80)
     }
     .arrow-container2{
@@ -820,7 +827,7 @@ h2{
       'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
     }
     .marquee{
-        padding-top: 30px;
+        padding-top: 35px;
         width: 100%;
         height: 100%;
         object-position: center;
@@ -829,7 +836,7 @@ h2{
     } 
     .marquee h3{
         font-size: 4rem;
-        font-weight: 200;
+        font-weight: 100;
         color:rgb(80, 80, 80)
     }
     
@@ -974,7 +981,7 @@ h2{
         transform: translate(-50%,-50%);
     }
     .marquee{
-        padding-top: 55px;
+        padding-top: 60px;
         width: 100%;
         height: 100%;
         object-position: center;
@@ -983,7 +990,7 @@ h2{
     } 
     .marquee h3{
         font-size: 6rem;
-        font-weight: 200;
+        font-weight: 100;
         color:rgb(80, 80, 80)
     }
     
