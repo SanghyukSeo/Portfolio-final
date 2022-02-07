@@ -1,6 +1,5 @@
 html{
     font-size: 62.5%;
-    min-width: 500px;
 }
 
 * {
@@ -8,11 +7,11 @@ html{
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Sk-Modernist";
-	color: black;
+	color: var(--primary-color);
     font-family: 'Blinker', sans-serif;
     transition: all .2s ease-out;
-    
 }
+
 .cursor{
     opacity: 1;
     background:coral;
@@ -54,7 +53,7 @@ h1{
 }
 
 header{
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
@@ -95,7 +94,6 @@ header{
     flex-direction: column;
 }
 .hello p{
-    background-color: ;
     display: flex;
     margin-top: 3%;
     margin-left: 15%;
@@ -169,32 +167,28 @@ header{
         transform: translateX(0px);
     }
 }
-
-
+/*
 @media (max-width: 1200px) {
     
     .hello p{
         
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
         font-size: 3rem;
 }
     .name h1{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
         font-size: 5rem;
     }
     .iam p{
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 15%;
+        margin-right: 15%;
         font-size: 3rem;
-    }
-    .arrow{
-        margin-right: 10%;
-        width: 70px;
     }
 }
 
+*/
 
 h2{
     position: absolute;
@@ -354,14 +348,14 @@ h2{
     height: 100%;
     width:100%;
     object-fit: cover;
-    z-index: -10;
+    z-index: -1000;
 }
 .grid > img{
     margin: 0;
     height: 100%;
     width:100%;
     object-fit: cover;
-    z-index: -10;
+    z-index: -1000;
 }
 
 
@@ -604,6 +598,38 @@ h2{
 
 
 
+
+@media (min-width: 100px){
+
+
+.main-grid { 
+    background-color: rgb(255, 255, 255);
+      display: grid;
+      gap: 0rem;
+        grid-auto-columns: 1fr;
+        grid-auto-rows:1fr;
+      grid-template-areas: 
+      'one'
+      'two'
+      'three'
+      'four'
+      'five'
+      'six'
+      'seven'
+      'eight'
+      'nine'
+      'ten'
+      'eleven'
+      'twelve'
+      'thirteen'
+      'fourteen'
+      'fifteen'
+      'sixteen';
+  
+      /*padding-block: 2rem;
+      */
+    }
+}
 
 
 
