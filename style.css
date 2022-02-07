@@ -119,6 +119,11 @@ header{
     width: 5vw;
     height: auto;
 }
+.arrow2{
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+}
 .arrow-container{
     margin-top: 20px;
     width: 100%;
