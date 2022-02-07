@@ -37,9 +37,6 @@ html{
     z-index: -1;
     mix-blend-mode: difference;
 }
-body{
-    height: 4000px;
-}
 li, a, button {
     font-weight: 500;
     font-size:14px;
@@ -78,7 +75,8 @@ header{
     transition: all .3s ease 0s;
 }
 .nav_links li a:hover{
-    text-decoration: line-through;
+    font-style: italic;
+    text-decoration:line-through;
 }
 
 .space100{
@@ -87,8 +85,8 @@ header{
 }
 .divider{
     width: 100%;
-	height: 1px;
-	background: rgb(20, 20, 20);
+	height: .5px;
+	background: rgb(122, 122, 122);
 }
 .introduction{
     display: flex;
@@ -122,7 +120,6 @@ header{
     font-weight: 500;
     font-family: 'BioRhyme Expanded', serif;
 }
-
 
 
 
@@ -516,6 +513,7 @@ h2{
 
 .intro .intro-container {
 	display: flex;
+    font-style: italic;
     text-align: right;
     flex-direction: column;
 	justify-content: space-between;
@@ -543,12 +541,15 @@ h2{
 }
 .intro-container .text1:hover {
     color: rgb(0, 0, 0);
+    font-style:normal;
 }
 .intro-container .text2:hover {
     color: rgb(0, 0, 0);
+    font-style:normal;
 }
 .intro-container .text3:hover {
     color: rgb(0, 0, 0);
+    font-style:normal;
 }
 .intro-container .text1:hover ~ .hover-img1{
     opacity: 80%;
