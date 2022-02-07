@@ -11,9 +11,22 @@ html{
     font-family: 'Blinker', sans-serif;
     
     transition: all .2s ease-out;
-
 }
-
+/*
+.cursor{
+    opacity: 0;
+    background: rgb(228, 228, 228);
+	position: fixed;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    transition:0s;  
+    pointer-events: none;
+    z-index: 10;
+}
+.name:hover .cursor{
+    opacity: 50%;
+}*/
 body{
     height: 4000px;
 }
@@ -26,7 +39,6 @@ li, a, button {
 
 /* Font wrap Setting*/
 h1{
-    word-break: break-all;
     white-space: normal;
 }
 
@@ -59,7 +71,7 @@ header{
 
 .space100{
     width: 100%;
-    height: 100px;
+    height: 3vw;
 }
 .divider{
     width: 100%;
@@ -76,7 +88,7 @@ header{
     margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 4.8rem;
+    font-size: 2.5vw;
     font-weight: 200;
 }
 .iam p{
@@ -85,7 +97,7 @@ header{
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 20px;
-    font-size: 4.8rem;
+    font-size: 2.5vw;
     font-weight: 200;
 }
 .name h1{
@@ -93,12 +105,23 @@ header{
     margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
-    font-size: 18rem;
+    font-size: 7vw;
     font-weight: 500;
     font-family: 'BioRhyme Expanded', serif;
 }
+
+
+
+
+.arrow{
+    float: right;
+    margin-right: 15%;
+    width: 5vw;
+    height: auto;
+}
 .arrow-container{
     margin-top: 20px;
+    width: 100%;
 }
 .arrow-container2{
     display: flex;
@@ -107,27 +130,19 @@ header{
     align-items: center;
     justify-content: center;
 }
-.arrow2{  
-    width: 100px;
-    height: 100px;
-    transform: translate(-50%,-50%);
-}
-.arrow{
-    float: right;
-    margin-right: 15%;
-    display: flex;
-    width: 100px;
-    height: auto;
-}
+
+
 .arrow:hover{
     animation:  arrow infinite  800ms 40ms ease-in-out;
 }
+
+
+
 @keyframes arrow{
     0% {
         transform: translateX(-20px);
     }
     100%{
-        
         transform: translateX(0px);
     }
 }
@@ -164,9 +179,11 @@ h2{
     margin-left: 1rem;
     margin-top: 1rem;
     z-index: 0;
+    color: rgb(199, 199, 199);
 }
 
 .main-grid { 
+    
     margin-left: 15%;
     margin-right: 15%;
     height:100%;
@@ -309,6 +326,13 @@ h2{
     align-items: center;
     object-fit: cover;
 }
+.grid > a img{
+    margin: 0;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    z-index: -1000;
+}
 .grid > img{
     margin: 0;
     height: 100%;
@@ -317,29 +341,35 @@ h2{
     z-index: -1000;
 }
 
+
 .exploded:hover{ 
-    transform: scale(99%) ;
+    transform: scale(99%);
+    filter: contrast(105%);
 }
 .nemo:hover{ 
     transform: scale(99%);
+    filter: contrast(105%);
 }
 .poster:hover{ 
     transform: scale(99%);
+    filter: contrast(110%);
 }
 .minus:hover{ 
     transform: scale(99%);
+    filter: contrast(105%);
 }
 .fooda:hover{
     transform: scale(99%) ;
 }
 .pencil-sharpener:hover{
     transform: scale(99%) ;
+    filter: contrast(105%);
 }
 .block:hover{
-    filter: contrast(130%);
+    filter: contrast(120%);
 }
 .atandt:hover{
-    filter: contrast(130%);
+    filter: contrast(120%);
 }
 .grid:nth-child(1):hover{
     background-color: rgba(0, 0, 0, 0.03);
@@ -348,6 +378,7 @@ h2{
 .grid:nth-child(2):hover{
     background-color: rgba(0, 0, 0, 0.03);
     box-shadow:inset 0 0 10px #00000015;
+    filter: contrast(105%);
 }
 .grid:nth-child(3):hover{
     background-color: rgba(0, 0, 0, 0.03);
@@ -382,15 +413,15 @@ h2{
     box-shadow:inset 0 0 10px #00000015;
 }
 .grid:nth-child(12):hover{
-    opacity: 0.7;
+    opacity: 0.6;
     background-color: rgba(0, 0, 0, 0.1);
 }
 .grid:nth-child(15):hover{
-    opacity: 0.7;
+    opacity: 0.6;
     background-color: rgba(0, 0, 0, 0.1)
 }
 .grid:nth-child(16):hover{
-    opacity: 0.7;
+    opacity: 0.6;
     background-color: rgba(0, 0, 0, 0.1)
 }
 .marquee{
@@ -431,8 +462,179 @@ h2{
 
 }
 
+.js1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+}
+
+
+
+
+
+/*!!!!!!!!Socials!!!!!!!*/
+
+.intro {
+    margin-top: 10%;
+	margin-left: 15%;
+	margin-right: 15%;
+    
+}
+
+.intro .intro-container {
+	display: flex;
+    text-align: right;
+    flex-direction: column;
+	justify-content: space-between;
+}
+
+.intro .intro-container a {
+	cursor: pointer;
+	text-decoration: none;
+    font-family: 'BioRhyme Expanded', serif !important;
+    font-size: 5vw;
+}
+
+.intro-container .a:hover{
+    position: relative;
+    z-index: -1;
+}
+.intro-container .text1 {
+    color:rgba(0, 0, 0, 0.144);
+}
+.intro-container .text2 {
+    color:rgba(0, 0, 0, 0.144);
+}
+.intro-container .text3 {
+    color:rgba(0, 0, 0, 0.144);
+}
+.intro-container .text1:hover {
+    color: rgb(0, 0, 0);
+}
+.intro-container .text2:hover {
+    color: rgb(0, 0, 0);
+}
+.intro-container .text3:hover {
+    color: rgb(0, 0, 0);
+}
+.intro-container .text1:hover ~ .hover-img1{
+    opacity: 80%;
+    transform: translate(-50%,-50%) scale(2);
+}
+.intro-container .text2:hover ~ .hover-img2{
+    opacity: 80%;
+    transform: translate(-50%,-50%) scale(2);
+}
+.intro-container .text3:hover ~ .hover-img3{
+    opacity: 80%;
+    transform: translate(-50%,-50%) scale(2);
+}
+.hover-img1{
+    opacity: 0;
+    position: absolute;
+    width: auto;
+    height: 20vw;
+    margin-top: 10vw;
+    left: 30%;
+    transform: translate(-70%,-50%) scale(1.9);
+    pointer-events: none;
+    z-index: -1;
+}
+.hover-img2{
+    opacity: 0;
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    margin-top: 22vw;
+    left: 30%;
+    transform: translate(-70%,-50%) scale(1.9);
+    pointer-events: none;
+    z-index: -1;
+}
+.hover-img3{
+    opacity: 0;
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    margin-top: 33vw;
+    left: 40%;
+    transform: translate(-70%,-50%) scale(1.9);
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 900px){
+    .main-grid{
+        grid-auto-rows:12rem;
+      grid-template-areas: 
+     
+      'one one one one eleven eleven'
+      'one one one one eleven eleven'
+      'four four six six two two'
+      'four four six six two two'
+      'three three thirteen thirteen two two'
+      'three three thirteen thirteen two two'
+      'three three seven seven five five'
+      'three three seven seven five five'
+      'eight eight eight eight eight eight'
+      'nine nine ten ten ten ten'      
+      'nine nine ten ten ten ten'      
+      'nine nine ten ten ten ten'      
+      'twelve twelve twelve twelve twelve fourteen'
+      'twelve twelve twelve twelve twelve fourteen'
+      'twelve twelve twelve twelve twelve fourteen'
+      'fifteen fifteen sixteen sixteen sixteen fourteen'
+      'fifteen fifteen sixteen sixteen sixteen fourteen';
+    }
+    .arrow2{
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%,-50%);
+    }
+    .marquee{
+        padding-top: 25px;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        text-align: center;
+        overflow: hidden;
+    } 
+    .marquee h3{
+        font-size: 4rem;
+        font-weight: 200;
+        color:rgb(80, 80, 80)
+    }
+    .arrow-container2{
+        display: flex;
+        width:100%;
+        height:100%;
+        align-items: center;
+        justify-content: center;
+    }
     .grid {
         background-color: transparent;
       }
@@ -543,54 +745,6 @@ h2{
       .grid:nth-child(16){
          grid-area: sixteen;
       }
-    .main-grid{
-        grid-auto-rows:12rem;
-      grid-template-areas: 
-     
-      'one one one one eleven eleven'
-      'one one one one eleven eleven'
-      'four four six six two two'
-      'four four six six two two'
-      'three three thirteen thirteen two two'
-      'three three thirteen thirteen two two'
-      'three three seven seven five five'
-      'three three seven seven five five'
-      'eight eight eight eight eight eight'
-      'nine nine ten ten ten ten'      
-      'nine nine ten ten ten ten'      
-      'nine nine ten ten ten ten'      
-      'twelve twelve twelve twelve twelve fourteen'
-      'twelve twelve twelve twelve twelve fourteen'
-      'twelve twelve twelve twelve twelve fourteen'
-      'fifteen fifteen sixteen sixteen sixteen fourteen'
-      'fifteen fifteen sixteen sixteen sixteen fourteen';
-    }
-    .arrow2{
-        width: 100px;
-        height: 100px;
-        transform: translate(-50%,-50%);
-    }
-    .marquee{
-        padding-top: 25px;
-        width: 100%;
-        height: 100%;
-        object-position: center;
-        text-align: center;
-        overflow: hidden;
-    } 
-    .marquee h3{
-        font-size: 4rem;
-        font-weight: 200;
-        color:rgb(80, 80, 80)
-    }
-    .arrow-container2{
-        display: flex;
-        width:100%;
-        height:100%;
-        align-items: center;
-        justify-content: center;
-    }
-    
 }
 
 
@@ -743,7 +897,7 @@ h2{
 }
 
 
-@media (min-width: 1800px){
+@media (min-width: 2100px){
     .main-grid{
         grid-auto-rows:21rem;
       grid-template-areas: 

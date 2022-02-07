@@ -19,16 +19,18 @@
 
 <script src="star.js"></script>
 <script src="script.js"></script>
+<script src="mouseFollow2.js"></script>
     </head>
 <body>
+
     <header>
         <img clsass="logo" src="#" alt ="logo">
         <nav>
             <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
         <div class="theme_selector" src="#" alt ="theme_selector"></div>
@@ -37,6 +39,7 @@
     <div class="divider"></div>
 
     <div class="introduction">
+        <div class="cursor"></div>
         <div class="hello">
             <p>Hello, My name is</p>
         </div>
@@ -51,16 +54,32 @@
         </div>
     </div>
 
+    <section class="intro">
+        <div class="intro-container">
+            <div class="text1" data-src="images/img-1.png"><a href="#">Interactive -<br>Designer</a></div>
+            <div class="space100"></div>
+            <div class="text2" data-src="images/img-2.jpg"><a href="#">Developer</a></div>
+            <div class="space100"></div>
+            <div class="text3" data-src="images/img-3.png"><a href="#">Maker</a></div>
+            <img src="images/img-1.png" class="hover-img1" alt="">
+            <img src="images/img-2.jpg" class="hover-img2" alt="">
+            <img src="images/img-3.png" class="hover-img3" alt="">
+        </div>
+    </section>
     
+    <div class="space100"></div>
+    <div class="space100"></div>
     <div class="space100"></div>
     <div class="space100"></div>
     <div class="divider"></div>
     <div class="space100"></div>
     <div class="space100"></div>
+    <div class="space100"></div>
+    <div class="space100"></div>
 
     <main class="main-grid">
         <div class="grid grid-1" >
-            <img class="exploded" src="images/exploded.png" alt="exploded">
+            <a href="#"><img class="exploded" src="images/exploded.png" alt="exploded"></a>
             <h2 class="name"></h2>
         </div>
         <div class="grid grid-2" >
@@ -68,7 +87,7 @@
             <h2 class="name"></h2>
         </div>
         <div class="grid grid-3" >
-            <img class="nemo" src="images/nemo.png" alt="nemo">
+            <a href="https://tjtkdgur957.wixsite.com/website"><img class="nemo" src="images/nemo.png" alt="nemo"></a>
             <h2 class="name"></h2>
         </div>
         <div class="grid grid-4" >
@@ -133,18 +152,27 @@
         </div>
     </main>
 
-    <div class="space100"></div>
-    <div class="space100"></div>
-    <div class="divider"></div>
-    <div class="space100"></div>
-    <div class="space100"></div>
-    <div class="space100"></div>
-    <div class="space100"></div>
-    <div class="space100"></div>
-    <div class="space100"></div>
-    <div class="space100"></div>
-    <div class="space100"></div>
 
 
+<script>
+
+container.querySelectorAll('.text').forEach(text =>{
+        text.onmousemove = () =>{
+            img.src = text.getAttribute('data-src');
+        }
+    })
+
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.svg";
+        }else{
+            icon.src = "images/moon.svg";
+        }
+    }
+    
+
+</script>
 </body>	
 </html>

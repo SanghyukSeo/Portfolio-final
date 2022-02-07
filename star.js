@@ -11,13 +11,21 @@ function windowResized() {
   }
   function draw() {
     background(255);
-    
     push();
-    star(mouseX, mouseY,  Math.floor(map(mouseX,0,width,30,70)), Math.floor(map(mouseY,0,height,30,70)), 40);
+    let a=30;
+    let b=70;
+    let c=40;
+    if($("#star").outerWidth()<300 && $("#star").outerHeight()<300){
+      a = 10;
+      b = 50;
+      c = 30;
+    }
+    star(mouseX, mouseY,  Math.floor(map(mouseX,0,width,a,b)), Math.floor(map(mouseY,0,height,a,b)), c);
     pop();
   
   }
   
+
   
   function star(x, y, radius1, radius2, npoints) {
     
