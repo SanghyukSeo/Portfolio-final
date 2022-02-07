@@ -3,6 +3,7 @@
 function setup() {
     let cnv = createCanvas($("#star").outerWidth(), $("#star").outerHeight());
     cnv.parent('star');
+    frameRate(100);
   }
   
 function windowResized() {
