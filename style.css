@@ -595,11 +595,11 @@ h2{
 
 
 
-@media (min-width: 100px){
+@media (min-width: 50px){
 .main-grid{
     margin-left: 5%;
     margin-right: 5%;
-    grid-auto-rows:12rem;
+    grid-auto-rows:10rem;
   grid-template-areas: 
   'one one one one'
   'one one one one'
@@ -625,7 +625,7 @@ h2{
   'fifteen fifteen sixteen sixteen';
 }
 .marquee{
-    padding-top: 30px;
+    padding-top: 20px;
     width: 100%;
     height: 100%;
     object-position: center;
