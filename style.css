@@ -432,9 +432,12 @@ h2{
     background-color: rgba(0, 0, 0, 0.03);
     box-shadow:inset 0 0 10px #00000020;
 }
-.grid:nth-child(13):hover{
+.grid:nth-child(12):hover{
     opacity: 0.6;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1)
+}
+.grid:nth-child(13):hover{
+    background-color: rgba(0, 0, 0, 0.03);
     box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(14):hover{
@@ -852,6 +855,10 @@ h2{
         }
 
 
+        .nav_links li{
+            display: inline-block;
+            padding: 0px 2rem;
+        }
 
         .intro-container .text1:hover ~ .hover-img1{
             opacity: 80%;
