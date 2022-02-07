@@ -83,7 +83,7 @@ header{
 
 .space100{
     width: 100%;
-    height: 3vw;
+    height: calc(10px + 2.5vw);
 }
 .divider{
     width: 100%;
@@ -118,7 +118,7 @@ header{
     margin-top: 3%;
     margin-left: 15%;
     margin-right: 15%;
-    font-size:calc(12px + 6.5vw);
+    font-size:calc(20px + 6.5vw);
     font-weight: 500;
     font-family: 'BioRhyme Expanded', serif;
 }
@@ -393,48 +393,53 @@ h2{
 }
 .grid:nth-child(1):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(2):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
     filter: contrast(105%);
 }
 .grid:nth-child(3):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(4) :hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(6) :hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(7):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(8):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(9):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(10):hover{
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(11):hover{      /* arrow2 */
     background-color: rgba(0, 0, 0, 0.03);
-    box-shadow:inset 0 0 10px #00000015;
+    box-shadow:inset 0 0 10px #00000020;
 }
-.grid:nth-child(12):hover{
+.grid:nth-child(13):hover{
     opacity: 0.6;
     background-color: rgba(0, 0, 0, 0.1);
+    box-shadow:inset 0 0 10px #00000020;
+}
+.grid:nth-child(14):hover{
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow:inset 0 0 10px #00000020;
 }
 .grid:nth-child(15):hover{
     opacity: 0.6;
@@ -593,111 +598,111 @@ h2{
 
 
 
-
+/*Step 2*/
 
 @media (min-width: 50px){
-.main-grid{
-    margin-left: 5%;
-    margin-right: 5%;
-    grid-auto-rows:10rem;
-  grid-template-areas: 
-  'one one one one'
-  'one one one one'
-  'four four two two'
-  'four four two two'
-  'three three two two'
-  'three three six six'
-  'three three six six'
-  'eight eight eight eight'
-  'five five five five'
-  'five five five five'
-  'ten ten ten ten'
-  'ten ten ten ten'
-  'nine nine seven seven'
-  'nine nine seven seven'
-  'nine nine eleven eleven'
-  'fourteen fourteen eleven eleven'
-  'fourteen fourteen thirteen thirteen'
-  'fourteen fourteen thirteen thirteen'
-  'twelve twelve twelve twelve'
-  'twelve twelve twelve twelve'
-  'fifteen fifteen sixteen sixteen'
-  'fifteen fifteen sixteen sixteen';
-}
-.marquee{
-    padding-top: 20px;
-    width: 100%;
-    height: 100%;
-    object-position: center;
-    text-align: center;
-    overflow: hidden;
-} 
-.marquee h3{
-    font-size: 4rem;
-    font-weight: 100;
-    color:rgb(80, 80, 80)
-}
-}
-
-
-
-@media (min-width: 800px){
     .main-grid{
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-auto-rows:10rem;
+      grid-template-areas: 
+      'one one one one'
+      'one one one one'
+      'four four two two'
+      'four four two two'
+      'three three two two'
+      'three three six six'
+      'three three six six'
+      'eight eight eight eight'
+      'ten ten ten ten'
+      'ten ten ten ten'
+      'nine nine seven seven'
+      'nine nine seven seven'
+      'nine nine eleven eleven'
+      'fourteen fourteen eleven eleven'
+      'fourteen fourteen thirteen thirteen'
+      'fourteen fourteen thirteen thirteen'
+      'twelve twelve twelve twelve'
+      'twelve twelve twelve twelve'
+      'fifteen fifteen sixteen sixteen'
+      'fifteen fifteen sixteen sixteen';
+    
+    }
+
+
+    
+    .cursor{
+        visibility: hidden;
+    }
+    
+
+    
+    .arrow{
+        width: 10vw;
+        height: auto;
+    }
+    .arrow-container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .arrow-box{
+        display: flex;
+        margin-right: calc(50% - (10vw)/2);
+        width: 10vw;
+    }
+    
+    
+    .nav_links li{
+        display: inline-block;
+        padding: 0px 1rem;
+    }
+    .hello p{
+        display: flex;
+        margin-top: 10%;
         margin-left: 15%;
         margin-right: 15%;
-        grid-auto-rows:12rem;
-      grid-template-areas: 
-     
-      'one one one one eleven eleven'
-      'one one one one eleven eleven'
-      'four four six six two two'
-      'four four six six two two'
-      'three three thirteen thirteen two two'
-      'three three thirteen thirteen two two'
-      'three three seven seven five five'
-      'three three seven seven five five'
-      'eight eight eight eight eight eight'
-      'nine nine ten ten ten ten'      
-      'nine nine ten ten ten ten'      
-      'nine nine ten ten ten ten'      
-      'twelve twelve twelve twelve twelve fourteen'
-      'twelve twelve twelve twelve twelve fourteen'
-      'twelve twelve twelve twelve twelve fourteen'
-      'fifteen fifteen sixteen sixteen sixteen fourteen'
-      'fifteen fifteen sixteen sixteen sixteen fourteen';
+        font-size:calc(12px + 1.5vw);
+        font-weight: 200;
     }
-    .arrow2{
-        width: 100px;
-        height: 100px;
-        transform: translate(-50%,-50%);
+    .iam p{
+        text-align: right;
+        margin-top: 8%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+        font-size:calc(12px + 1.5vw);
+        font-weight: 200;
     }
-    .marquee{
-        padding-top: 30px;
-        width: 100%;
-        height: 100%;
-        object-position: center;
-        text-align: center;
-        overflow: hidden;
-    } 
-    .marquee h3{
-        font-size: 4rem;
-        font-weight: 100;
-        color:rgb(80, 80, 80)
+    .name h1{
+        word-break: break-all;
+        text-align:right;
+        margin-top: 7%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size:calc(25px + 6.5vw);
+        font-weight: 500;
+        font-family: 'BioRhyme Expanded', serif;
     }
-    .arrow-container2{
-        display: flex;
-        width:100%;
-        height:100%;
-        align-items: center;
-        justify-content: center;
+    .intro-container .text1:hover ~ .hover-img1{
+        opacity: 80%;
+        transform: translate(-30%,-50%) scale(4);
     }
+    .intro-container .text2:hover ~ .hover-img2{
+        opacity: 80%;
+        transform: translate(-30%,-50%) scale(4);
+    }
+    .intro-container .text3:hover ~ .hover-img3{
+        opacity: 80%;
+        transform: translate(-30%,-50%) scale(3.5);
+    }
+
     .grid {
         background-color: transparent;
       }
       .grid:nth-child(1){
           grid-area: one;
           border-style: solid;
-          border-right: none;
           border-bottom: none;
           border-width:0.2px;
          color: rgb(224, 224, 224);
@@ -727,16 +732,11 @@ h2{
          color: rgb(224, 224, 224);
       }
       .grid:nth-child(5){
-         grid-area: five;
-         border-style: solid;
-         border-bottom: none;
-         border-width:0.2px;
-         color: rgb(224, 224, 224);
+          display: none;
       }
       .grid:nth-child(6){
          grid-area: six;
          border-style: solid;
-         border-right: none;
          border-bottom: none;
          border-width:0.2px;
          color: rgb(224, 224, 224);
@@ -745,7 +745,6 @@ h2{
          grid-area: seven;
          border-style: solid;
          border-bottom: none;
-         border-right: none;
          border-width:0.2px;
          color: rgb(224, 224, 224);
       }
@@ -759,6 +758,432 @@ h2{
       .grid:nth-child(9){
          grid-area: nine;
          border-style: solid;
+         border-bottom: none;
+         border-right: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(10){
+         grid-area: ten;
+         border-style: solid;
+         border-bottom: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(11){
+         grid-area: eleven;
+         border-style: solid;
+         border-bottom: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(12){
+         grid-area: twelve;
+      }
+      .grid:nth-child(13){
+         grid-area: thirteen;
+         border-style: solid;
+         border-bottom: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(14){
+         grid-area: fourteen;
+         border-style: solid;
+         border-right: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(15){
+         grid-area: fifteen;
+      }
+      .grid:nth-child(16){
+         grid-area: sixteen;
+      }
+    .marquee{
+        padding-top: 28px;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        text-align: center;
+        overflow: hidden;
+    } 
+    .marquee h3{
+        font-size: 3rem;
+        font-weight: 100;
+        color:rgb(80, 80, 80)
+    }
+    .arrow-container2{
+        display: flex;
+        width:100%;
+        height:100%;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+    
+    
+    /*Step 3*/
+    
+    @media (min-width: 800px){
+        .main-grid{
+            margin-left: 15%;
+            margin-right: 15%;
+            grid-auto-rows:12rem;
+          grid-template-areas: 
+         
+          'one one one one eleven eleven'
+          'one one one one eleven eleven'
+          'four four six six two two'
+          'four four six six two two'
+          'three three thirteen thirteen two two'
+          'three three thirteen thirteen two two'
+          'three three seven seven five five'
+          'three three seven seven five five'
+          'eight eight eight eight eight eight'
+          'nine nine ten ten ten ten'      
+          'nine nine ten ten ten ten'      
+          'nine nine ten ten ten ten'      
+          'twelve twelve twelve twelve twelve fourteen'
+          'twelve twelve twelve twelve twelve fourteen'
+          'twelve twelve twelve twelve twelve fourteen'
+          'fifteen fifteen sixteen sixteen sixteen fourteen'
+          'fifteen fifteen sixteen sixteen sixteen fourteen';
+        }
+
+
+
+        .intro-container .text1:hover ~ .hover-img1{
+            opacity: 80%;
+            transform: translate(-50%,-50%) scale(2);
+        }
+        .intro-container .text2:hover ~ .hover-img2{
+            opacity: 80%;
+            transform: translate(-50%,-50%) scale(2);
+        }
+        .intro-container .text3:hover ~ .hover-img3{
+            opacity: 80%;
+            transform: translate(-50%,-50%) scale(2);
+        }
+
+
+        .name h1{
+            word-break: keep-all;
+            text-align:right;
+            margin-top: 3%;
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size:calc(20px + 6.5vw);
+            font-weight: 500;
+            font-family: 'BioRhyme Expanded', serif;
+        }
+        .arrow{
+            float: right;
+            width: 5vw;
+            height: auto;
+        }
+        .arrow2{
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%,-50%);
+        }
+        .arrow-container{
+            margin-top: 20px;
+            width: 100%;
+            margin-right: 15%;
+        }
+        .arrow-box{
+            display: flex;
+            margin-right: 15%;
+            width: 5vw;
+            float: right;
+        }
+        
+        .arrow2{
+            width: 100px;
+            height: 100px;
+            transform: translate(-50%,-50%);
+        }
+        .marquee{
+            padding-top: 30px;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            text-align: center;
+            overflow: hidden;
+        } 
+        .marquee h3{
+            font-size: 4rem;
+            font-weight: 100;
+            color:rgb(80, 80, 80)
+        }
+        .arrow-container2{
+            display: flex;
+            width:100%;
+            height:100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid {
+            background-color: transparent;
+          }
+          .grid:nth-child(1){
+              grid-area: one;
+              border-style: solid;
+              border-right: none;
+              border-bottom: none;
+              border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(2){
+              grid-area: two;
+              border-left: none;
+              border-style: solid;
+              border-bottom: none;
+              border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(3){
+             grid-area: three;
+             border-style: solid;
+             border-bottom: none;
+             border-right: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(4){
+             grid-area: four;
+             border-style: solid;
+             border-right: none;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(5){
+              display: flex;
+             grid-area: five;
+             border-style: solid;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(6){
+             grid-area: six;
+             border-style: solid;
+             border-right: none;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(7){
+             grid-area: seven;
+             border-style: solid;
+             border-bottom: none;
+             border-right: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(8){
+             grid-area: eight;
+             border-style: solid;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(9){
+             grid-area: nine;
+             border-style: solid;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(10){
+             grid-area: ten;
+             border-style: solid;
+             border-left: none;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(11){
+             grid-area: eleven;
+             border-style: solid;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(12){
+             grid-area: twelve;
+          }
+          .grid:nth-child(13){
+             grid-area: thirteen;
+             border-style: solid;
+              border-right: none;
+             border-bottom: none;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(14){
+             grid-area: fourteen;
+             border-style: solid;
+             border-width:0.2px;
+             color: rgb(224, 224, 224);
+          }
+          .grid:nth-child(15){
+             grid-area: fifteen;
+          }
+          .grid:nth-child(16){
+             grid-area: sixteen;
+          }
+    }
+    
+    /*Step 4*/
+    @media (min-width: 1300px){
+        .main-grid{
+            grid-auto-rows:13rem;
+          grid-template-areas: 
+          'one one one one two two two two'
+          'one one one one two two two two'
+          'three three four four two two two two'
+          'three three four four two two two two'
+          'three three five five five five six six'
+          'three three five five five five six six'
+          'seven seven eight eight eight eight eight eight'
+          'seven seven nine nine ten ten ten ten'
+          'eleven eleven nine nine ten ten ten ten' 
+          'eleven eleven nine nine ten ten ten ten'
+          'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+          'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+          'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+          'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+          'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+          'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+          'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
+        }
+        .cursor{
+            visibility:visible;
+            opacity: 1;
+            background:coral;
+            position: fixed;
+            width: 5vw;
+            height: 5vw;
+            border-radius: 100%;
+            transition:0s;  
+            pointer-events: none;
+            z-index: -1;
+            mix-blend-mode: difference;
+        }
+        .hello p{
+            display: flex;
+            margin-top: 5%;
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size:calc(12px + 1.5vw);
+            font-weight: 200;
+        }
+        .iam p{
+            text-align: right;
+            margin-top: 10%;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 20px;
+            font-size:calc(12px + 1.5vw);
+            font-weight: 200;
+        }
+        .name h1{
+            word-break: keep-all;
+            text-align:right;
+            margin-top: 3%;
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size:calc(20px + 6.5vw);
+            font-weight: 500;
+            font-family: 'BioRhyme Expanded', serif;
+        }
+        
+        .marquee{
+            padding-top: 35px;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            text-align: center;
+            overflow: hidden;
+        } 
+        .marquee h3{
+            font-size: 4rem;
+            font-weight: 100;
+            color:rgb(80, 80, 80)
+        }
+        
+    .grid {
+        background-color: transparent;
+        }
+        .grid:nth-child(1){
+            grid-area: one;
+            border-style: solid;
+            border-right: none;
+            border-bottom: none;
+            border-width:0.2px;
+            color: rgb(224, 224, 224);
+        }
+        .grid:nth-child(2){
+            grid-area: two;
+            border-style: solid;
+            border-width:0.2px;
+            color: rgb(224, 224, 224);
+        }
+        .grid:nth-child(3){
+            grid-area: three;
+            border-style: solid;
+            border-bottom: none;
+            border-width:0.2px;
+            color: rgb(224, 224, 224);
+        }
+        .grid:nth-child(4){
+            grid-area: four;
+            border-style: solid;
+            border-left: none;
+            border-right: none;
+            border-width:0.2px;
+            color: rgb(224, 224, 224);
+        }
+        .grid:nth-child(5){
+            grid-area: five;
+            border-style: solid;
+            border-left: none;
+            border-top: none;
+            border-bottom: none;
+            border-width:0.2px;
+            color: rgb(224, 224, 224);
+        } 
+      .grid:nth-child(6){
+         grid-area: six;
+         border-style: solid;
+         border-left: none;
+         border-top: none;
+         border-bottom: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(7){
+         grid-area: seven;
+         border-style: solid;
+         border-bottom: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(8){
+         grid-area: eight;
+         border-style: solid;
+         border-left: none;
+         border-bottom: none;
+         border-width:0.2px;
+         color: rgb(224, 224, 224);
+      }
+      .grid:nth-child(9){
+         grid-area: nine;
+         border-style: solid;
+         border-left: none;
          border-bottom: none;
          border-width:0.2px;
          color: rgb(224, 224, 224);
@@ -784,7 +1209,6 @@ h2{
       .grid:nth-child(13){
          grid-area: thirteen;
          border-style: solid;
-          border-right: none;
          border-bottom: none;
          border-width:0.2px;
          color: rgb(224, 224, 224);
@@ -801,197 +1225,49 @@ h2{
       .grid:nth-child(16){
          grid-area: sixteen;
       }
-}
-
-
-@media (min-width: 1300px){
-    .main-grid{
-        grid-auto-rows:13rem;
-      grid-template-areas: 
-      'one one one one two two two two'
-      'one one one one two two two two'
-      'three three four four two two two two'
-      'three three four four two two two two'
-      'three three five five five five six six'
-      'three three five five five five six six'
-      'seven seven eight eight eight eight eight eight'
-      'seven seven nine nine ten ten ten ten'
-      'eleven eleven nine nine ten ten ten ten' 
-      'eleven eleven nine nine ten ten ten ten'
-      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
-      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
-      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
-      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
-    }
-    .marquee{
-        padding-top: 35px;
-        width: 100%;
-        height: 100%;
-        object-position: center;
-        text-align: center;
-        overflow: hidden;
-    } 
-    .marquee h3{
-        font-size: 4rem;
-        font-weight: 100;
-        color:rgb(80, 80, 80)
     }
     
-.grid {
-    background-color: transparent;
-  }
-  .grid:nth-child(1){
-      grid-area: one;
-      border-style: solid;
-      border-right: none;
-      border-bottom: none;
-      border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(2){
-      grid-area: two;
-      border-style: solid;
-      border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(3){
-     grid-area: three;
-     border-style: solid;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(4){
-     grid-area: four;
-     border-style: solid;
-     border-left: none;
-     border-right: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(5){
-     grid-area: five;
-     border-style: solid;
-     border-left: none;
-     border-top: none;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(6){
-     grid-area: six;
-     border-style: solid;
-     border-left: none;
-     border-top: none;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(7){
-     grid-area: seven;
-     border-style: solid;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(8){
-     grid-area: eight;
-     border-style: solid;
-     border-left: none;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(9){
-     grid-area: nine;
-     border-style: solid;
-     border-left: none;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(10){
-     grid-area: ten;
-     border-style: solid;
-     border-left: none;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(11){
-     grid-area: eleven;
-     border-style: solid;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(12){
-     grid-area: twelve;
-  }
-  .grid:nth-child(13){
-     grid-area: thirteen;
-     border-style: solid;
-     border-bottom: none;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(14){
-     grid-area: fourteen;
-     border-style: solid;
-     border-width:0.2px;
-     color: rgb(224, 224, 224);
-  }
-  .grid:nth-child(15){
-     grid-area: fifteen;
-  }
-  .grid:nth-child(16){
-     grid-area: sixteen;
-  }
-}
-
-
-@media (min-width: 2100px){
-    .main-grid{
-        grid-auto-rows:21rem;
-      grid-template-areas: 
-      'one one one one two two two two'
-      'one one one one two two two two'
-      'three three four four two two two two'
-      'three three four four two two two two'
-      'three three five five five five six six'
-      'three three five five five five six six'
-      'seven seven eight eight eight eight eight eight'
-      'seven seven nine nine ten ten ten ten'
-      'eleven eleven nine nine ten ten ten ten' 
-      'eleven eleven nine nine ten ten ten ten'
-      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
-      'twelve twelve twelve twelve twelve twelve thirteen thirteen'
-      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
-      'twelve twelve twelve twelve twelve twelve fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
-      'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
-    }
-    .arrow2{
-        width: 200px;
-        height: 200px;
-        transform: translate(-50%,-50%);
-    }
-    .marquee{
-        padding-top: 60px;
-        width: 100%;
-        height: 100%;
-        object-position: center;
-        text-align: center;
-        overflow: hidden;
-    } 
-    .marquee h3{
-        font-size: 6rem;
-        font-weight: 100;
-        color:rgb(80, 80, 80)
-    }
+    /*Step 5*/
     
-}
+    @media (min-width: 2100px){
+        .main-grid{
+            grid-auto-rows:21rem;
+        grid-template-areas: 
+        'one one one one two two two two'
+        'one one one one two two two two'
+        'three three four four two two two two'
+        'three three four four two two two two'
+        'three three five five five five six six'
+        'three three five five five five six six'
+        'seven seven eight eight eight eight eight eight'
+        'seven seven nine nine ten ten ten ten'
+        'eleven eleven nine nine ten ten ten ten' 
+        'eleven eleven nine nine ten ten ten ten'
+        'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+        'twelve twelve twelve twelve twelve twelve thirteen thirteen'
+        'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+        'twelve twelve twelve twelve twelve twelve fourteen fourteen'
+        'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+        'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
+        'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
+        }
+        .arrow2{
+            width: 200px;
+            height: 200px;
+            transform: translate(-50%,-50%);
+        }
+        .marquee{
+            padding-top: 60px;
+            width: 100%;
+            height: 100%;
+            object-position: center;
+            text-align: center;
+            overflow: hidden;
+        } 
+        .marquee h3{
+            font-size: 6rem;
+            font-weight: 100;
+            color:rgb(80, 80, 80)
+        }
+        
+    }
