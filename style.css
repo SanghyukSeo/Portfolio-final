@@ -1,5 +1,6 @@
 html{
     font-size: 62.5%;
+    min-width: 500px;
 }
 
 * {
@@ -7,26 +8,36 @@ html{
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Sk-Modernist";
-	color: var(--secondary-color);
+	color: black;
     font-family: 'Blinker', sans-serif;
-    
     transition: all .2s ease-out;
+    
 }
-/*
 .cursor{
-    opacity: 0;
-    background: rgb(228, 228, 228);
+    opacity: 1;
+    background:coral;
 	position: fixed;
-    width: 10rem;
-    height: 10rem;
+    width: 5vw;
+    height: 5vw;
     border-radius: 100%;
     transition:0s;  
     pointer-events: none;
-    z-index: 10;
+    z-index: -1;
+    mix-blend-mode: difference;
 }
-.name:hover .cursor{
-    opacity: 50%;
-}*/
+
+
+.arrow-box:hover >.cursor{
+    opacity: 1;
+    background:coral;
+	position: fixed;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
+    pointer-events: none;
+    z-index: -1;
+    mix-blend-mode: difference;
+}
 body{
     height: 4000px;
 }
@@ -43,10 +54,10 @@ h1{
 }
 
 header{
-    display: flex;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
 }
 .logo{
     cursor:pointer;
@@ -84,6 +95,7 @@ header{
     flex-direction: column;
 }
 .hello p{
+    background-color: ;
     display: flex;
     margin-top: 3%;
     margin-left: 15%;
@@ -115,7 +127,6 @@ header{
 
 .arrow{
     float: right;
-    margin-right: 15%;
     width: 5vw;
     height: auto;
 }
@@ -127,6 +138,13 @@ header{
 .arrow-container{
     margin-top: 20px;
     width: 100%;
+    margin-right: 15%;
+}
+.arrow-box{
+    display: flex;
+    margin-right: 15%;
+    width: 5vw;
+    float: right;
 }
 .arrow-container2{
     display: flex;
@@ -188,7 +206,7 @@ h2{
 }
 
 .main-grid { 
-    
+    background-color: white;
     margin-left: 15%;
     margin-right: 15%;
     height:100%;
@@ -336,14 +354,14 @@ h2{
     height: 100%;
     width:100%;
     object-fit: cover;
-    z-index: -1000;
+    z-index: -10;
 }
 .grid > img{
     margin: 0;
     height: 100%;
     width:100%;
     object-fit: cover;
-    z-index: -1000;
+    z-index: -10;
 }
 
 
