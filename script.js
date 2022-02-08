@@ -8,46 +8,58 @@ $("document").ready(function(){
             left : e.clientX-cursor.width()/2});
     });
     
-        
     $(".name h1").hover(function(){
-        $(".cursor").css("width", "14vw");
-        $(".cursor").css("height", "14vw");
         $(".name h1").css("font-style","italic");
         $(".name h1").css("font-style","italic");
         $(".cursor").css("mix-blend-mode", "difference");
         $(".cursor").css("box-shadow", "0 0 30px rgb(251, 251, 251), inset 0 0 20px  rgba(0, 0, 0,0.4)");
         $(".cursor").css("filter", "blur(.6px)");
+        $(".cursor").animate({
+            width : "14vw",
+            height : "14vw"
+        }, 200);
     }
         , function(){
-            $(".cursor").css("width", "3vw");
-            $(".cursor").css("height", "3vw");
             $(".name h1").css("font-style","normal");
             $(".name2 h1").css("color","transparent");
             $(".name2 h1").css("font-style","normal");
             $(".cursor").css("mix-blend-mode", "soft-light");
             $(".cursor").css("box-shadow", "0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)");
             $(".cursor").css("filter", "blur(.6px)");
+            $(".cursor").animate({
+                width : "3vw",
+                height : "3vw"
+            }, 200);
     });
     
 
     $(".nav_links").hover(function(){
-        $(".cursor").css("width", "5vw");
-        $(".cursor").css("height", "5vw");
         $(".cursor").css("filter", "blur(0px)");
+        $(".cursor").animate({
+            width : "5vw",
+            height : "5vw"
+        }, 100);
         }, function(){
-            $(".cursor").css("width", "3vw");
-            $(".cursor").css("height", "3vw");
-            $(".cursor").css("filter", "blur(.6px)");
-      });
+        
+        $(".cursor").css("filter", "blur(.6px)");
+        $(".cursor").animate({
+            width : "3vw",
+            height : "3vw"
+        }, 100);
+    });
     $(".arrow-container").hover(function(){
-        $(".cursor").css("width", "12vw");
-        $(".cursor").css("height", "12vw");
+        $(".cursor").animate({
+            width : "12vw",
+            height : "12vw"
+        }, 200);
         $(".cursor").css("background-color","rgb(255, 255, 255);");
         $(".cursor").css("mix-blend-mode", "multiply");
         $(".cursor").css("filter", "blur(.6px)");
         }, function(){
-        $(".cursor").css("width", "3vw");
-        $(".cursor").css("height", "3vw");
+            $(".cursor").animate({
+                width : "3vw",
+                height : "3vw"
+            }, 200);
         $(".cursor").css("background-color", "rgb(255, 255, 255)");
         $(".cursor").css("mix-blend-mode", "soft-light");
         $(".cursor").css("filter", "blur(.6px)");
@@ -62,18 +74,15 @@ $("document").ready(function(){
             $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
             $(".cursor").css("filter", "blur(5px)");
             }, function(){
-<<<<<<< Updated upstream
                 $(".cursor").css("width", "3vw");
                 $(".cursor").css("height", "3vw");
             $(".cursor").css("mix-blend-mode", "soft-light");
             $(".cursor").css("filter", "blur(.6px)");
-=======
             $(".cursor").css("width", "3vw");
             $(".cursor").css("height", "3vw");
             $(".cursor").css("mix-blend-mode", "soft-light");
             $(".cursor").css("filter", "blur(.6px)");
             $(".cursor").css("background-color", "rgb(255, 255, 255)");
->>>>>>> Stashed changes
             $(".cursor").css("box-shadow", "0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)");
           });
           
