@@ -3,10 +3,139 @@ $("document").ready(function(){
 
     var cursor = $(".cursor");
     $(window).mousemove(function(e){
+
         $(".cursor").css({top : e.clientY-cursor.height()/2,
             left : e.clientX-cursor.width()/2});
     });
     
+        
+    $(".name h1").hover(function(){
+        $(".cursor").css("width", "13vw");
+        $(".cursor").css("height", "13vw");
+        $(".name h1").css("font-style","italic");
+        $(".name h1").css("font-style","italic");
+        $(".cursor").css("mix-blend-mode", "difference");
+        $(".cursor").css("box-shadow", "0 0 0 1px rgb(31, 31, 31), inset 0 0 13px  rgba(0, 0, 0,0.3)");
+        
+        $(".cursor").css("filter", "blur(0px)");
+    }
+        , function(){
+            $(".cursor").css("width", "3vw");
+            $(".cursor").css("height", "3vw");
+            $(".name h1").css("font-style","normal");
+            $(".name2 h1").css("color"," rgba(255, 255, 255, 0);");
+            $(".name2 h1").css("font-style","normal");
+            $(".cursor").css("mix-blend-mode", "soft-light");
+            $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
+            $(".cursor").css("filter", "blur(5px)");
+    });
+    
+
+    $(".nav_links").hover(function(){
+        $(".cursor").css("width", "5vw");
+        $(".cursor").css("height", "5vw");
+        $(".cursor").css("filter", "blur(0px)");
+        }, function(){
+            $(".cursor").css("width", "3vw");
+            $(".cursor").css("height", "3vw");
+            $(".cursor").css("filter", "blur(5px)");
+      });
+    $(".arrow-container").hover(function(){
+        $(".cursor").css("width", "12vw");
+        $(".cursor").css("height", "12vw");
+        $(".cursor").css("background-color","rgb(255, 255, 255);");
+        $(".cursor").css("mix-blend-mode", "multiply");
+        $(".cursor").css("filter", "blur(0px)");
+        }, function(){
+        $(".cursor").css("width", "3vw");
+        $(".cursor").css("height", "3vw");
+        $(".cursor").css("background-color", "rgb(255, 255, 255)");
+        $(".cursor").css("mix-blend-mode", "soft-light");
+        $(".cursor").css("filter", "blur(5px)");
+      });
+
+
+        $(".marquee").hover(function(){
+            $(".cursor").css("width", "8vw");
+            $(".cursor").css("height", "8vw");
+            $(".cursor").css("background-color","rgb(200, 200, 200);");
+            $(".cursor").css("mix-blend-mode", "color-dodge");
+            }, function(){
+                $(".cursor").css("width", "3vw");
+                $(".cursor").css("height", "3vw");
+            $(".cursor").css("mix-blend-mode", "soft-light");
+          });
+          
+        $(".poster").hover(function(){
+            $(".cursor").css("width", "8vw");
+            $(".cursor").css("height", "8vw");
+            $(".cursor").css("background-color", "rgb(255, 255, 255)");
+            $(".cursor").css("mix-blend-mode", "difference");
+            }, function(){
+                $(".cursor").css("width", "3vw");
+                $(".cursor").css("height", "3vw");
+                $(".cursor").css("background-color", "rgb(255, 255, 255)");
+            $(".cursor").css("mix-blend-mode", "soft-light");
+          });
+        $(".arrow-container2").hover(function(){
+            $(".cursor").css("width", "10vw");
+            $(".cursor").css("height", "10vw");
+            $(".cursor").css("background-color","rgb(200, 200, 200);");
+            $(".cursor").css("mix-blend-mode", "color-dodge");
+            }, function(){
+                $(".cursor").css("background-color", "rgb(255, 255, 255)");
+                $(".cursor").css("width", "3vw");
+                $(".cursor").css("height", "3vw");
+            $(".cursor").css("mix-blend-mode", "soft-light");
+          });
+        $(".atandt").hover(function(){
+            $(".cursor").css("mix-blend-mode", "screen");
+            $(".cursor").css("background-color", "rgba(10,106,249,.9)");
+            $(".cursor").css("box-shadow", "0 0 0 0");
+            }, function(){
+                $(".cursor").css("mix-blend-mode", "soft-light");
+                $(".cursor").css("background-color", "rgb(255,255,255);");
+            $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
+          });
+          
+        $(".nemo").hover(function(){            
+            $(".cursor").css("mix-blend-mode", "screen");
+            $(".cursor").css("background-color", "rgba(127,255,212,1)");
+            $(".cursor").css("box-shadow", "0 0 0 0");
+            }, function(){
+                $(".cursor").css("mix-blend-mode", "soft-light");
+                $(".cursor").css("background-color", "rgb(255, 255, 255)");
+            $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
+          });
+          
+        $(".aesop").hover(function(){
+            $(".cursor").css("background-color", "rgb(85,85,85);");
+            }, function(){
+                $(".cursor").css("background-color", "rgb(255, 255, 255)");
+          });
+        $(".pencil-sharpener").hover(function(){
+            $(".cursor").css("mix-blend-mode", "screen");
+            $(".cursor").css("background-color", "rgba(240,109,15,.9);");
+            $(".cursor").css("box-shadow", "0 0 0 0");
+            }, function(){
+                $(".cursor").css("mix-blend-mode", "soft-light");
+                $(".cursor").css("background-color", "rgb(255,255,255);");
+            $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
+          });
+          $(".minus").hover(function(){
+            $(".cursor").css("mix-blend-mode", "screen");
+            $(".cursor").css("background-color", "rgba(240,109,15,.9);");
+            $(".cursor").css("box-shadow", "0 0 0 0");
+              }, function(){
+                $(".cursor").css("mix-blend-mode", "soft-light");
+                $(".cursor").css("background-color", "rgb(255,255,255);");
+            $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
+            });    
+
+
+
+
+
     let x=0;
     $(".arrow").click(function(){
         if(x%2==0){

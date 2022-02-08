@@ -14,35 +14,19 @@ html{
 
 .cursor{
     opacity: 1;
-    background:coral;
+    filter: blur(5px);
+    background:rgb(255, 255, 255);
+    box-shadow: 0 0 0 1px rgb(141, 141, 141);
 	position: fixed;
-    width: 5vw;
-    height: 5vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 100%;
     transition:0s;  
     pointer-events: none;
-    z-index: -1;
-    mix-blend-mode: difference;
+    z-index: 1;
+    mix-blend-mode:color-burn;
 }
 
-
-.arrow-box:hover >.cursor{
-    opacity: 1;
-    background:coral;
-	position: fixed;
-    width: 10vw;
-    height: 10vw;
-    border-radius: 100%;
-    pointer-events: none;
-    z-index: -1;
-    mix-blend-mode: difference;
-}
-li, a, button {
-    font-weight: 500;
-    font-size:14px;
-    color: solid black;
-    text-decoration: none;
-}
 
 /* Font wrap Setting*/
 h1{
@@ -69,13 +53,13 @@ header{
 }
 
 .nav_links li a{
+	text-decoration: none;
     font-size:calc(10px + .2vw);
     font-weight: 400;
     text-transform: uppercase;
     transition: all .3s ease 0s;
 }
 .nav_links li a:hover{
-    font-style: italic;
     text-decoration:line-through;
 }
 
@@ -102,15 +86,33 @@ header{
     font-weight: 200;
 }
 .iam p{
+    font-style: normal;
+    position: relative;
     text-align: right;
-    margin-top: 8%;
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 20px;
     font-size:calc(12px + 1.5vw);
     font-weight: 200;
 }
+.dummy{
+    margin-top: 34%;
+}
 .name h1{
+    position: absolute;
+    word-break: keep-all;
+    text-align:right;
+    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    background-color: transparent;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size:calc(20px + 6.5vw);
+    font-weight: 500;
+    font-family: 'BioRhyme Expanded', serif;
+}
+.name2 h1{
+    position: absolute;
     word-break: keep-all;
     text-align:right;
     margin-top: 3%;
@@ -119,6 +121,7 @@ header{
     font-size:calc(20px + 6.5vw);
     font-weight: 500;
     font-family: 'BioRhyme Expanded', serif;
+    z-index: 100;
 }
 
 
@@ -200,7 +203,7 @@ h2{
 }
 
 .main-grid { 
-    background-color: white;
+    background-color:transparent;
     margin-left: 15%;
     margin-right: 15%;
     height:100%;
@@ -226,6 +229,7 @@ h2{
       'fifteen'
       'sixteen';
   
+
       /*padding-block: 2rem;
       */
   
@@ -465,7 +469,7 @@ h2{
 
 .marquee h3{
     font-size: 3rem;
-    color:rgb(80, 80, 80)
+    color:rgb(80, 80, 80);
 }
 
 .marquee h3 .marquee-title{
@@ -632,12 +636,40 @@ h2{
       'fifteen fifteen sixteen sixteen';
     
     }
-
+    *{
+        cursor:auto;
+        }
 
     
     .cursor{
         visibility: hidden;
     }
+    .name h1{
+        position: absolute;
+        word-break: keep-all;
+        text-align:right;
+        -webkit-text-stroke: 0px rgb(0, 0, 0);
+        background-color: transparent;
+        margin-top: 3%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size:calc(20px + 6.5vw);
+        font-weight: 500;
+        font-family: 'BioRhyme Expanded', serif;
+    }
+    .name2 h1{
+        position: absolute;
+        word-break: keep-all;
+        text-align:right;
+        margin-top: 3%;
+        margin-left: 15%;
+        margin-right: 15%;
+        font-size:calc(20px + 6.5vw);
+        font-weight: 500;
+        font-family: 'BioRhyme Expanded', serif;
+        z-index: 100;
+    }
+    
     
 
     
@@ -678,6 +710,11 @@ h2{
         font-size:calc(12px + 1.5vw);
         font-weight: 200;
     }
+
+    
+.dummy{
+    margin-top: 74%;
+}
     .name h1{
         word-break: break-all;
         text-align:right;
@@ -855,7 +892,6 @@ h2{
           'fifteen fifteen sixteen sixteen sixteen fourteen';
         }
 
-
         .nav_links li{
             display: inline-block;
             padding: 0px 2rem;
@@ -873,18 +909,21 @@ h2{
             opacity: 80%;
             transform: translate(-50%,-50%) scale(2);
         }
-
-
+        .dummy{
+            margin-top: 45%;
+        }
         .name h1{
             word-break: keep-all;
-            text-align:right;
-            margin-top: 3%;
-            margin-left: 15%;
-            margin-right: 15%;
-            font-size:calc(20px + 6.5vw);
-            font-weight: 500;
-            font-family: 'BioRhyme Expanded', serif;
+            -webkit-text-stroke: 0px rgb(0, 0, 0);
         }
+        .name2 h1{
+            word-break: keep-all;
+        }
+
+        
+        
+
+        
         .arrow{
             float: right;
             width: 5vw;
@@ -1068,18 +1107,46 @@ h2{
           'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen'
           'fifteen fifteen fifteen sixteen sixteen sixteen fourteen fourteen';
         }
+
+        *{
+            
+    cursor:none;
+        }
+        
+        .dummy{
+            margin-top: 35%;
+        }
+        .name h1{
+            position: absolute;
+            word-break: keep-all;
+            text-align:right;
+            -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+            background-color: transparent;
+            margin-top: 3%;
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size:calc(20px + 6.5vw);
+            font-weight: 500;
+            font-family: 'BioRhyme Expanded', serif;
+        }
+        .name2 h1{
+            position: absolute;
+            word-break: keep-all;
+            text-align:right;
+            margin-top: 3%;
+            margin-left: 15%;
+            margin-right: 15%;
+            font-size:calc(20px + 6.5vw);
+            font-weight: 500;
+            font-family: 'BioRhyme Expanded', serif;
+            z-index: 100;
+        }
+
+
+        
         .cursor{
             visibility:visible;
-            opacity: 1;
-            background:coral;
-            position: fixed;
-            width: 5vw;
-            height: 5vw;
-            border-radius: 100%;
-            transition:0s;  
-            pointer-events: none;
-            z-index: -1;
-            mix-blend-mode: difference;
+            z-index: 1;
         }
         .hello p{
             display: flex;
