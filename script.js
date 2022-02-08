@@ -62,10 +62,18 @@ $("document").ready(function(){
             $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
             $(".cursor").css("filter", "blur(5px)");
             }, function(){
+<<<<<<< Updated upstream
                 $(".cursor").css("width", "3vw");
                 $(".cursor").css("height", "3vw");
             $(".cursor").css("mix-blend-mode", "soft-light");
             $(".cursor").css("filter", "blur(.6px)");
+=======
+            $(".cursor").css("width", "3vw");
+            $(".cursor").css("height", "3vw");
+            $(".cursor").css("mix-blend-mode", "soft-light");
+            $(".cursor").css("filter", "blur(.6px)");
+            $(".cursor").css("background-color", "rgb(255, 255, 255)");
+>>>>>>> Stashed changes
             $(".cursor").css("box-shadow", "0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)");
           });
           
