@@ -33,7 +33,7 @@ $("document").ready(function(){
     });
     
 
-    $(".nav_links").hover(function(){
+    $("header").hover(function(){
         $(".cursor").css("filter", "blur(0px)");
         $(".cursor").animate({
             width : "5vw",

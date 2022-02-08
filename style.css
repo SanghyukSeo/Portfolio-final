@@ -59,7 +59,7 @@ header{
     text-transform: uppercase;
     transition: all .3s ease 0s;
 }
-.nav_links li a:hover{
+.nav_links li:hover{
     text-decoration:line-through;
 }
 
