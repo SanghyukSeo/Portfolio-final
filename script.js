@@ -22,7 +22,7 @@ $("document").ready(function(){
             $(".cursor").css("width", "3vw");
             $(".cursor").css("height", "3vw");
             $(".name h1").css("font-style","normal");
-            $(".name2 h1").css("color"," rgba(255, 255, 255, 0);");
+            $(".name2 h1").css("color","transparent");
             $(".name2 h1").css("font-style","normal");
             $(".cursor").css("mix-blend-mode", "soft-light");
             $(".cursor").css("box-shadow", "0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)");

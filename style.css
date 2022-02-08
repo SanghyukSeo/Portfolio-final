@@ -914,6 +914,7 @@ h2{
         }
         .name h1{
             word-break: keep-all;
+            background: transparent;
             -webkit-text-stroke: 0px rgb(0, 0, 0);
         }
         .name2 h1{
