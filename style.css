@@ -667,9 +667,8 @@ h2{
     }
     .name h1{
         position: absolute;
-        word-break: keep-all;
         text-align:right;
-        -webkit-text-stroke: 0px rgb(0, 0, 0);
+        -webkit-text-stroke: 0;
         background-color: transparent;
         margin-top: 3%;
         margin-left: 15%;
@@ -680,7 +679,6 @@ h2{
     }
     .name2 h1{
         position: absolute;
-        word-break: keep-all;
         text-align:right;
         margin-top: 3%;
         margin-left: 15%;
@@ -913,6 +911,48 @@ h2{
           'fifteen fifteen sixteen sixteen sixteen fourteen';
         }
 
+        *{
+            
+            cursor:none;
+                }
+
+        
+                .cursor{
+                    visibility:visible;
+                    z-index: 1;
+                }
+                
+                .dummy{
+                    margin-top: 45%;
+                }
+                .name h1{
+                    position: absolute;
+                    word-break: keep-all;
+                    text-align:right;
+                    -webkit-text-stroke: 1px rgb(0, 0, 0);
+                    background-color: transparent;
+                    margin-top: 3%;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    font-size:calc(20px + 6.5vw);
+                    font-weight: 500;
+                    font-family: 'BioRhyme Expanded', serif;
+                }
+                .name2 h1{
+                    position: absolute;
+                    word-break: keep-all;
+                    text-align:right;
+                    margin-top: 3%;
+                    margin-left: 15%;
+                    margin-right: 15%;
+                    font-size:calc(20px + 6.5vw);
+                    font-weight: 500;
+                    font-family: 'BioRhyme Expanded', serif;
+                    z-index: 100;
+                }
+        
+
+
         .nav_links li{
             display: inline-block;
             padding: 0px 2rem;
@@ -929,17 +969,6 @@ h2{
         .intro-container .text3:hover ~ .hover-img3{
             opacity: 80%;
             transform: translate(-50%,-50%) scale(2);
-        }
-        .dummy{
-            margin-top: 45%;
-        }
-        .name h1{
-            word-break: keep-all;
-            background: transparent;
-            -webkit-text-stroke: 0px rgb(0, 0, 0);
-        }
-        .name2 h1{
-            word-break: keep-all;
         }
 
         
@@ -1170,6 +1199,7 @@ h2{
             visibility:visible;
             z-index: 1;
         }
+
         .hello p{
             display: flex;
             margin-top: 5%;
