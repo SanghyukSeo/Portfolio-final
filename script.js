@@ -99,6 +99,9 @@ $("document").ready(function(){
             $(".cursor").css("filter", "blur(.6px)");
             $(".cursor").css("box-shadow", "0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)");
           });
+
+          
+          // ARROW2 !!!!!!!!!!!!!!!
         $(".arrow-container2").hover(function(){
             $(".cursor").css("width", "10vw");
             $(".cursor").css("height", "10vw");
