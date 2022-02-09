@@ -13,6 +13,7 @@ html{
 }
 
 .cursor{
+    transform: scale(1);
     transition:none;  
     opacity: 1;
     filter: blur(.6px);
@@ -27,6 +28,9 @@ html{
     mix-blend-mode:color-burn;
 }
 
+.cursor.animate{
+    transform: scale(1.8);
+}
 
 /* Font wrap Setting*/
 h1{

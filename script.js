@@ -7,7 +7,7 @@ $("document").ready(function(){
         $(".cursor").css({top : e.clientY-cursor.height()/2,
             left : e.clientX-cursor.width()/2});
     });
-    
+      
     $(".name h1").hover(function(){
         $(".name h1").css("font-style","italic");
         $(".name h1").css("font-style","italic");
@@ -26,26 +26,23 @@ $("document").ready(function(){
             $(".cursor").css("mix-blend-mode", "soft-light");
             $(".cursor").css("box-shadow", "0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)");
             $(".cursor").css("filter", "blur(.6px)");
+
             $(".cursor").animate({
                 width : "3vw",
                 height : "3vw"
             }, 100);
     });
     
+    // nav !!!!!!!!!!!!!!!
 
     $("header").hover(function(){
         $(".cursor").css("filter", "blur(0px)");
-        $(".cursor").animate({
-            width : "5vw",
-            height : "5vw"
-        }, 100);
+        $('.cursor').addClass('animate',1);
+        
         }, function(){
         
         $(".cursor").css("filter", "blur(.6px)");
-        $(".cursor").animate({
-            width : "3vw",
-            height : "3vw"
-        }, 100);
+        $('.cursor').removeClass('animate');
     });
 
     // ARROW !!!!!!!!!!!!!!!
