@@ -239,8 +239,6 @@ $("document").ready(function(){
         $(".intro").animate({
             opacity :"0",
         }, 400);
-        $(".intro").animate({
-        }, 400);
         $(".intro").css("display","none");
         $(this).css({
             "transition-duration":".2s","transform":"rotate(0deg)"})

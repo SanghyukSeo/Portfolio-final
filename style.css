@@ -125,7 +125,7 @@ header{
     position: absolute;
     word-break: keep-all;
     text-align:right;
-    -webkit-text-stroke: 1.5px rgb(0, 0, 0);
+    -webkit-text-stroke: 1.5px rgb(255, 41, 41);
     background-color: transparent;
     margin-top: 3%;
     margin-left: 15%;
