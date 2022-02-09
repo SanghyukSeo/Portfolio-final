@@ -13,15 +13,15 @@ html{
 }
 
 .cursor{
+    transition:none;  
     opacity: 1;
-    filter: blur(5px);
+    filter: blur(.6px);
     background:rgb(255, 255, 255);
     box-shadow: 0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3);
-	position: fixed;
+	position:fixed;
     width: 3vw;
     height: 3vw;
-    border-radius: 100%;
-    transition:0s;  
+    border-radius: 50%;
     pointer-events: none;
     z-index: 1;
     mix-blend-mode:color-burn;
@@ -52,6 +52,13 @@ header{
     padding: 0px 2rem;
 }
 
+.nav_links li {
+	text-decoration: none;
+    font-size:calc(10px + .2vw);
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all .3s ease 0s;
+}
 .nav_links li a{
 	text-decoration: none;
     font-size:calc(10px + .2vw);
@@ -63,10 +70,22 @@ header{
     text-decoration:line-through;
 }
 
+/* SPACE !!!!!!!!!!!!!!!! */
+
 .space100{
     width: 100%;
     height: calc(10px + 2.5vw);
 }
+.space200{
+    width: 100%;
+    height: calc(20px + 3.5vw);
+}
+.space300{
+    width: 100%;
+    height: calc(30px + 4.5vw);
+}
+
+
 .divider{
     width: 100%;
 	height: .5px;
@@ -155,6 +174,7 @@ header{
     justify-content: center;
 }
 
+/*
 
 .arrow:hover{
     animation:  arrow infinite  800ms 40ms ease-in-out;
@@ -170,7 +190,6 @@ header{
         transform: translateX(0px);
     }
 }
-/*
 @media (max-width: 1200px) {
     
     .hello p{
@@ -509,6 +528,8 @@ h2{
 /*!!!!!!!!Socials!!!!!!!*/
 
 .intro {
+    display: none;
+    opacity:0;
     margin-top: 10%;
 	margin-left: 15%;
 	margin-right: 15%;

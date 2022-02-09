@@ -29,7 +29,7 @@ $("document").ready(function(){
             $(".cursor").animate({
                 width : "3vw",
                 height : "3vw"
-            }, 200);
+            }, 100);
     });
     
 
@@ -47,44 +47,41 @@ $("document").ready(function(){
             height : "3vw"
         }, 100);
     });
-    $(".arrow-container").hover(function(){
-        $(".cursor").animate({
-            width : "12vw",
-            height : "12vw"
-        }, 200);
-        $(".cursor").css("background-color","rgb(255, 255, 255);");
-        $(".cursor").css("mix-blend-mode", "multiply");
-        $(".cursor").css("filter", "blur(.6px)");
+
+    // ARROW !!!!!!!!!!!!!!!
+    
+    $(".arrow-box").hover(function(){
+        $(".cursor").css({
+        "width":"12vw",
+        "height":"12vw",
+        "mix-blend-mode": "multiply"})
         }, function(){
-            $(".cursor").animate({
-                width : "3vw",
-                height : "3vw"
-            }, 200);
-        $(".cursor").css("background-color", "rgb(255, 255, 255)");
-        $(".cursor").css("mix-blend-mode", "soft-light");
-        $(".cursor").css("filter", "blur(.6px)");
+        $(".cursor").css({
+        "width":"3vw",
+        "height":"3vw",
+        "mix-blend-mode": "soft-light",
+        "filter": "blur(.6px)"})
       });
 
 
-        $(".marquee").hover(function(){
-            $(".cursor").css("width", "8vw");
-            $(".cursor").css("height", "8vw");
-            $(".cursor").css("background-color","rgb(200, 200, 200);");
-            $(".cursor").css("mix-blend-mode", "color-dodge");
-            $(".cursor").css("box-shadow", "0 0 0 1px rgb(141, 141, 141)");
-            $(".cursor").css("filter", "blur(5px)");
-            }, function(){
-                $(".cursor").css("width", "3vw");
-                $(".cursor").css("height", "3vw");
-            $(".cursor").css("mix-blend-mode", "soft-light");
-            $(".cursor").css("filter", "blur(.6px)");
-            $(".cursor").css("width", "3vw");
-            $(".cursor").css("height", "3vw");
-            $(".cursor").css("mix-blend-mode", "soft-light");
-            $(".cursor").css("filter", "blur(.6px)");
-            $(".cursor").css("background-color", "rgb(255, 255, 255)");
-            $(".cursor").css("box-shadow", "0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)");
-          });
+    $(".marquee").hover(function(){
+        $(".cursor").css({
+        "width":"8vw",
+        "height":"8vw",
+        "background-color":"rgb(200, 200, 200)",
+        "box-shadow":"0 0 0 1px rgb(141, 141, 141)",
+        "filter":"blur(5px)",
+        "mix-blend-mode": "color-dodge"})
+        }, function(){
+        $(".cursor").css({
+        "width":"3vw",
+        "height":"3vw",
+        "background-color":"rgb(255, 255, 255)",
+        "box-shadow":"0 0 0 1px rgb(251, 251, 251), inset 0 0 10px  rgba(0, 0, 0, 0.3)",
+        "filter":"blur(.6px)",
+        "mix-blend-mode": "soft-light"})
+    });
+
           
         $(".poster").hover(function(){
             $(".cursor").css("width", "8vw");
@@ -213,16 +210,42 @@ $("document").ready(function(){
 
 
 
+    $("#work").click(function(){   
+        
+        $('html, body').animate({
+            scrollTop: $(".divider2").offset().top
+        },900);
+    })
 
     let x=0;
     $(".arrow").click(function(){
         if(x%2==0){
+            $(".intro").animate({
+                opacity :"1"
+            }, 400);
+            $(".intro").css("display","block");
         $(this).css({
-            "transition-duration":".3s","transform":"rotate(90deg)"})
+            "transition-duration":".2s","transform":"rotate(90deg)"})
+
+
+            $('html, body').animate({
+                scrollTop: $(".intro").offset().top -200
+            }, 900);
 
     }else{
+        $(".intro").animate({
+            opacity :"0",
+        }, 400);
+        $(".intro").animate({
+        }, 400);
+        $(".intro").css("display","none");
         $(this).css({
-            "transition-duration":".5s","transform":"rotate(0deg)"})
+            "transition-duration":".2s","transform":"rotate(0deg)"})
+
+            
+            $('html, body').animate({
+                scrollTop: $(".nav_links").offset().top -20
+            }, 900);
     }
     x++;
     });
